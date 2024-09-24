@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-[#F9F7F3] py-5">
+      <nav class="md:flex justify-evenly items-center text-center">
+        <div>
+          <button
+            class="text-xl font-semibold bg-[#B4F461] px-5 py-3 rounded-md"
+          >
+            Blog
+          </button>
+          <button class="hidden">Home</button>
+        </div>
+        <div class="flex items-center gap-6 justify-center">
+          <img src="assets/logo.png" alt="" />
+          <h3 class="text-xl font-semibold">Donate Bangladesh</h3>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <img src="assets/coin.png" alt="" />
+          <p><span>5500</span> <span class="font-semibold">BDT</span></p>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-3 md:mx-11">
+      <!-- FAQ -->
+      <h1 class="mt-14 text-4xl font-semibold">Imprtant FAQ</h1>
+      <!-- faq container -->
+      <div class="mt-12 space-y-1">
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            what is DOM?
+          </div>
+          <div class="collapse-content">
+            <p>The DOM is a programming interface that represents an HTML or XML document as a structured tree, allowing scripts to manipulate its content.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What are DOM events?
+          </div>
+          <div class="collapse-content">
+            <p>DOM events are user or browser actions that trigger code execution, handled using addEventListener().</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How to access/modify DOM elements?
+          </div>
+          <div class="collapse-content">
+            <p>Use methods like getElementById() and properties like innerHTML.</p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How to add/remove DOM elements?
+          </div>
+          <div class="collapse-content">
+            <p>Use createElement(), appendChild(), removeChild().</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
