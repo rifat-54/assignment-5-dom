@@ -8,7 +8,7 @@ function invalidInput(input,mainbalance)
     const mainBalance=getValueByIdFromText(mainbalance);
     if(InputValue<=0 || InputValue>mainBalance || isNaN(InputValue))
     {
-        alert('Invaid Amont');
+        alert('Invaid Amount');
         return true;
     }else
     {
