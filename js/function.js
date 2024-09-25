@@ -28,3 +28,31 @@ function calculateDonation(input,donatonbalance,mainbalance)
     document.getElementById(mainbalance).innerText=mainNewBanance;
 
 }
+
+function removeHideenClass(id){
+    document.getElementById(id).classList.remove('hidden');
+}
+
+function addHiddenClass(id)
+{
+    document.getElementById(id).classList.add('hidden');
+}
+
+function showHistoryText(id,title)
+{
+    const showHistory=document.getElementById('show-history');
+    const titleText=document.getElementById(title).innerText;
+    const input=document.getElementById(id).value;
+    const div=document.createElement('div');
+    div.innerHTML=`
+    <div class="border border-gray-200 my-1 px-8 py-5 rounded-md">
+        <h4 class="font-semibold text-xl">${input} Taka ${titleText}</h4>
+        <p class="text-gray-500 text-[16px]">Date: ${new Date().toLocaleString()}</p>
+      </div>
+    `
+    showHistory.insertBefore(div,showHistory.firstChild);
+}
+
+
+
+
